@@ -1,0 +1,82 @@
+.slider .content {
+    position: relative;
+}
+
+.slider .swiper {
+    width: 80%;
+    height: 12rem;
+    position: unset;
+}
+
+.slider .swiper .swiper-button-prev {
+    left: 0rem;
+}
+
+.slider .swiper .swiper-button-next {
+    right: 0rem;
+}
+
+.slider .swiper-slide {
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-radius: 1rem;
+}
+
+.slider .swiper-slide .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slider .swiper-slide .desc .name {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider .swiper-slide .desc .name span:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.slider .swiper-slide .desc .name span:nth-child(2) {
+    font-size: .75rem;
+}
+
+.slider .swiper-slide .desc .price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.slider .swiper-slide .desc .btn {
+    font-size: .6rem;
+    padding: .3rem;
+    border: 1px solid;
+    width: max-content;
+    cursor: pointer;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-radius: 1rem;
+}
+
+.slider .swiper-slide .product-img {
+    position: absolute;
+    right: 0;
+    bottom: -20%;
+    width: 6rem;
+    height: 11rem;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}

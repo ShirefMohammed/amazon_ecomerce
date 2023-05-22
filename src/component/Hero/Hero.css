@@ -1,0 +1,195 @@
+.hero .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+    .hero .content {
+        flex-direction: column;
+        gap: 2rem
+    }
+}
+
+/* Left side */
+.hero .left-side .skin-protection {
+    width: min-content;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.hero .left-side .trendy-collection {
+    max-width: 250px;
+}
+
+.hero .left-side .trendy-collection span:first-child {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 800;
+    display: block;
+}
+
+/* Middle Side */
+.hero .middle-side {
+    position: relative;
+}
+
+.hero .middle-side .blue-circle {
+    position: absolute;
+    bottom: 1rem;
+    width: 30rem;
+    height: 30rem;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    z-index: -99;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.hero .middle-side img {
+    width: 30rem;
+    pointer-events: none;
+    position: relative;
+}
+
+.hero .middle-side .cart {
+    position: absolute;
+    bottom: 7rem;
+    right: -6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero .middle-side .cart .bag {
+    background: #fff;
+    border: 6px solid var(--black);
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.hero .middle-side .cart .sign-up {
+    padding: .75rem;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.hero .middle-side .cart .sign-up span {
+    font-size: .75rem;
+}
+
+.hero .middle-side .cart .sign-up .arrow {
+    border: 1px solid green;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* Right Side */
+.hero .right-side {
+    width: 250px;
+}
+
+.hero .right-side .monthly-traffic,
+.hero .right-side .happy-customers {
+    text-align: end;
+}
+
+.hero .right-side .monthly-traffic {
+    margin-bottom: 6rem;
+}
+
+.hero .right-side .monthly-traffic span:first-child {
+    font-size: 2.5rem;
+    font-weight: 800;
+    display: block;
+}
+
+.hero .right-side .happy-customers span:first-child {
+    font-size: 2.5rem;
+    font-weight: 800;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .hero .content {
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem
+    }
+
+    .hero .left-side .skin-protection {
+        width: revert;
+        margin-bottom: 2rem;
+    }
+
+    .hero .left-side .trendy-collection {
+        max-width: 100%;
+    }
+
+    .hero .middle-side .blue-circle {
+        width: 20rem;
+        height: 20rem;
+        bottom: 1rem;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .hero .middle-side img {
+        width: 20rem;
+    }
+
+    .hero .middle-side .cart {
+        bottom: 3rem;
+        right: 10%;
+    }
+
+    .hero .right-side {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .hero .right-side .monthly-traffic,
+    .hero .right-side .happy-customers {
+        text-align: center;
+    }
+
+    .hero .right-side .monthly-traffic {
+        margin-bottom: 2rem;
+    }
+}

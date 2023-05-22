@@ -1,0 +1,112 @@
+.header .content {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .left-side {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .left-side>img {
+    width: 2.5rem;
+}
+
+.header .left-side>span {
+    font-weight: 600;
+}
+
+.header .right-side {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 992px) {
+    .header .right-side {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        z-index: 1000;
+        flex-direction: column;
+        background-color: hsla(0, 0%, 100%, 0.9);
+        padding: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        border-radius: 1rem;
+    }
+}
+
+.header .right-side .bars {
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .header .right-side .bars {
+        display: revert;
+    }
+}
+
+.header .right-side .links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 992px) {
+    .header .right-side .links {
+        flex-direction: column;
+    }
+}
+
+.header .right-side .links a {
+    font-weight: 400;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.header .right-side .links a:hover {
+    color: var(--pink);
+}
+
+.header .right-side input[type='search'] {
+    outline: none;
+    border: none;
+    padding: .5rem;
+    width: 150px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+    .header .right-side input[type='search'] {
+        border: 1px solid black;
+        background-color: transparent;
+    }
+}
+
+.header .right-side .cart {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .d-none {
+        display: none !important;
+    }
+}
